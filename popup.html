@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/popup.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div>只对当前页起作用</div>
+        <div class="input-container">
+            <span>视频是否禁止暂停:</span>
+            <div>
+                <span>开启</span>
+                <input type="radio" name="status" id="status1"/>
+            </div>
+            <div>
+                <span>关闭</span>
+                <input type="radio" name="status" id="status2"/>
+            </div>
+        </div>
+        <div class="input-container">
+            <span>视频播放速度:</span>
+            <input class="input" type="number" id="race" step="0.1"/>
+        </div>
+        <div class="input-container">
+            <span>文档上下滚动速度:</span>
+            <input class="input" type="number" id="doc"/>
+        </div>
+        <button id="confirm">确定</button>
+    </div>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>

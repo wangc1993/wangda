@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "网大神器",
+  "description": "网大神器，阅读必备，你值得拥有",
+  "version": "1.0.0",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+      "storage",
+      "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://wangda.chinamobile.com/*"],
+      "js": ["js/content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
